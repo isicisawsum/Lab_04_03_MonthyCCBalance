@@ -2,14 +2,15 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        int ccBalance;
+        System.out.println("How much is on your credit card?"); //asks user to input for variable ccBalance
+        ccBalance = 5000; //simulated input
+        System.out.println("You entered $" + ccBalance); //outputting the balance user 'inputted'
+        double Interest = ccBalance * .17;//calculations for interest
+        ccBalance += Interest; //calculations for total balance
+        System.out.println("After one month your total is $" + ccBalance);
+        ccBalance += Interest; //more calculations to make month 2
+        System.out.println("After two months your total is $" + ccBalance);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
     }
 }
